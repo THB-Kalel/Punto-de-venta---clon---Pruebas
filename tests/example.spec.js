@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 test('Navegar a pestaña Movimientos', async ({ page }) => {
   await page.goto('http://localhost:8080/vista/Inventario.xhtml');
 
-  //await page.click('text=Movimientos');
+  await page.click('text=Movimientos');
 
   await expect(
       page.locator('text=Gestión de Carga y Descarga de Stock')
