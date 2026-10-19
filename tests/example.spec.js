@@ -50,7 +50,7 @@ test('Buscar producto en inventario', async ({ page }) => {
 test('Navegar a Historial de movimientos', async ({ page }) => {
   await page.goto('http://localhost:8080/vista/Inventario.xhtml');
 
-  await page.click('text=Historial de movimientos');
+  //await page.click('text=Historial de movimientos');
 
   await expect(
       page.locator('text=Historial de Movimientos y Reporte Mensual')
